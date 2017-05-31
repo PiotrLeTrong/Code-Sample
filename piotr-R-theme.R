@@ -41,7 +41,8 @@ theme_piotr <- function(base_size = 12, base_family = "Lato") {
     
     axis.text = element_text(size = 10),
     axis.text.x = element_text(margin = margin(t = 4)),
-    axis.text.y = element_text(margin = margin(t = 4)), 
+    axis.text.y = element_text(margin = margin(t = 4),
+                               hjust = 1), 
     axis.text.x.top = NULL, 
     axis.text.y.right = NULL, 
     
@@ -133,4 +134,5 @@ theme_piotr <- function(base_size = 12, base_family = "Lato") {
 update_geom_defaults("bar", list(fill = "#003262"))
 update_geom_defaults("point", list(colour = "#003262"))
 update_geom_defaults("line", list(colour = "#003262"))
+update_geom_defaults("boxplot", list(colour = "#003262"))
 update_geom_defaults("text", list(colour = "#FDB515"))
